@@ -1,0 +1,67 @@
+/*COLORS
+
+bg blue:0D1D27
+
+greenHighlite:#56C75C
+yellowHighlite: #D4D07E
+org shadow:#AD7B3A
+
+RedHighLite: #BA443E
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Cambo|Dosis:800|Hanuman');
+body {
+    background-color: #0d1d27;
+    color: white;
+}
+
+/*borders...*/
+.bo{
+    width: 100%;
+    height: 5%;
+    background-color: #ad7b3a;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+
+#up {top: 0;}#dn{bottom: 0}
+
+/*font sizes, styles...*/
+
+h1{
+    font-size:890%;
+    color: #d4d07e;
+}
+h2{font-size:690%;}
+h3{
+    font-size:190%;
+    color: #56C75C;
+
+}
+h4{
+    font-size:140%;
+    color: #BA443E;
+}
+h1{font-family: 'Dosis', sans-serif;}
+h2, h2,h4{font-family: 'Cambo', serif;}
+
+/*links..*/
+
+
+
+/*body divs...*/
+
+#intro, #link {
+    
+    text-align:center;
+    position:relative;
+    
+    
+    
+    width: 79%;
+}
+#intro {
+    
+}
