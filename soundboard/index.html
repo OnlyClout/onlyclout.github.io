@@ -3,47 +3,53 @@
     <html>
 
     <head>
-        <title>SOUNDBOARD v1.001</title>
-        <link type="text/css" rel="stylesheet" href="soundboard.css">
+    <title>SOUNDBOARD v1.001</title>
+    <link type="text/css" rel="stylesheet" href="soundboard.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-        <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
 
-        <!--personal js..-->
-        <script type="text/javascript" src="myjs.js"></script>
-
-
-    </head>
-
-    <body>
+    <!--personal js..-->
+    <script type="text/javascript" src="myjs.js"></script>
 
 
+</head>
 
-        <header>
-<!--            <div class="banner" id="top"></div>-->
-        </header>
-        
-  
-            <div id="titleBar"><h1>SOUNDBOARD v1.001</h1></div>
-
-        <div id="sbContainer">
+<body>
 
 
-<!--            <div onclick='$.playSound("sound_files/Larry/whatisthis.mp3")' class="sbButton"></div>-->
 
-            
+   <span>
+      <div id="menuButton"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg></div>
+       <div id="titleBar">
+       <h1>SOUNDBOARD v1.001</h1>
+           
+       </div></span>
 
-
-        </div>
-            
+    
+    <div id="menu">
+    <h1>Menu</h1>
+    </div>
        
+    
+    
+    
 
-<!--        <div class="banner" id="bottom"></div>-->
+    <div id="sbContainer">
+
+
+        <!--  sound_files loaded in This div...
+example div:          <div onclick='$.playSound("sound_files/Larry/whatisthis.mp3")' class="sbButton"></div>-->
 
 
 
-    </body>
+
+    </div>
+</body>
 
 
     </html>
