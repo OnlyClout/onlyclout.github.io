@@ -27,7 +27,7 @@ $(document).ready(function () {
     $('body').append(menu);
           
     $("#hi").on("click", function () {
-        $("#menu").toggle();
+        $("#menu").fadeToggle();
     });
           
 
