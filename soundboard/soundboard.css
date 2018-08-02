@@ -16,18 +16,19 @@ html, body {
     
 }
 #menu {
-    background-color: white;
+    background:linear-gradient(90deg, rgba(239,247,250,1) 0%, rgba(254,255,255,1) 100%);
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
+    top: 3vh;
+    left: 3%;
+    width: 13vw;
+    height: 40vh;
     z-index: 1;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-    opacity: 0.85;
+/*    border: 2px solid cyan;*/
+    box-shadow: 15px 10px 0px 24px black;
+    opacity: 1;
     text-align: center;
     float:left;
+    border-radius:5%;
         
 }
 #menu h1 {font-size: 100%}
