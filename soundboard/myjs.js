@@ -1,13 +1,6 @@
 $(document).ready(function () {
-    //alert('lol, well is this shit finally working or what? let me fking KNOW PL0x!!');
-
-    //Element initialization....
-
-    //menu...
-
-    
-
-    //function to load sounds..
+ 
+    //function to load sounds, via Jquery Playsound module ..
     function loadSounds(sb_array, sb_folder) {
         for (i = 0; i < sb_array.length; i++) {
             var ins_string = "<div onclick='$.playSound(\"sound_files/" + sb_folder + "/" + sb_array[i] + "\")' class=\"sbButton\"></div>";
@@ -15,7 +8,9 @@ $(document).ready(function () {
 
         }
     }
-
+	
+	
+	//options MENU...
     $("#menu").hide();
     var menu = '<div id="hi" ' +
           'style="position:absolute; top:0;left:0;width:1%;height:1%;">'+
@@ -25,13 +20,14 @@ $(document).ready(function () {
           
           
     $('body').append(menu);
-          
+      
+		//make menu toggle...
     $("#hi").on("click", function () {
         $("#menu").fadeToggle();
     });
           
 
-
+	
    
 
 
@@ -43,13 +39,24 @@ $(document).ready(function () {
 
 
 
-    // functions for every soundbank to add...
-
-    //loadSounds(LarryFolderFiles, 'Larry');
-    loadSounds(soundBank2, 'Soundboard 2.0 loketest 2');
-    //loadSounds(soundbank3, 'MiniSoundboard');
-
-
+    // menu buttons that ass sounds (loadSounds)
+	
+    $('#bOne').click(function(){
+		$('#sbContainer').empty();
+		loadSounds(LarryFolderFiles, 'Larry');
+	});
+	
+	$('#bTwo').click(function(){
+		$('#sbContainer').empty();
+		loadSounds(soundBank2, 'Soundboard 2.0 loketest 2');
+	});
+	
+	$('#bThree').click(function(){
+		$('#sbContainer').empty();
+		loadSounds(soundbank3, 'MiniSoundBoard');
+	});
+	
+	
 
 
 
