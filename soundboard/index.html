@@ -3,57 +3,59 @@
     <html>
 
     <head>
-    <title>SOUNDBOARD v1.1</title>
-    <link type="text/css" rel="stylesheet" href="soundboard.css">
+        <title>SOUNDBOARD v1.1</title>
+        <link type="text/css" rel="stylesheet" href="soundboard.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
 
-    <!--personal js..-->
-    <script type="text/javascript" src="myjs.js"></script>
-
-
-</head>
-
-<body>
+        <!--personal js..-->
+        <script type="text/javascript" src="myjs.js"></script>
 
 
+    </head>
 
-
-    <!-- menu bar...-->
-    
-
-
-<div id="menu">
-    <h1>Menu</h1>
-    <h2> Sounds</h2>
-    <button id="bOne">Soundpack I</button>
-    <button id="bTwo">Soundpack II</button>
-    <button id="bThree">Soundpack III</button>
-</div>
-
-
-    <div id="titleBar">
-        <h1>SOUNDBOARD v1.1</h1>
-
-    </div>
-
-
-    
+    <body>
 
 
 
 
-    <div id="sbContainer">
-        <!--  sound_files loaded in This div...
+        <!-- menu bar...-->
+
+
+
+        <div id="menu">
+            <h1>Menu</h1>
+            <h2> Sounds</h2>
+            <button id="bOne">Soundpack I</button>
+            <button id="bTwo">Soundpack II</button>
+            <button id="bThree">Soundpack III</button>
+        </div>
+
+
+        <div id="titleBar">
+            <h1>SOUNDBOARD v1.1</h1>
+
+        </div>
+
+
+
+
+
+
+
+        <div id="sbContainer">
+            <!--  sound_files loaded in This div...
 example div:          <div onclick='$.playSound("sound_files/Larry/whatisthis.mp3")' class="sbButton"></div>-->
-    <h4> Load sounds from upper left menu <br>...</h4>
-    </div>
-    
-    
-    <div id="stopButton" onclick='$.stopSound()'><h5>STOP </h5></div>
-</body>
+            <h4> Load sounds from upper left menu <br>...</h4>
+        </div>
+
+        <div id="stopButton" onclick='$.stopSound()'>
+            <h5>STOP </h5>
+        </div>
+
+    </body>
 
 
     </html>
