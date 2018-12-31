@@ -3,8 +3,14 @@ $(document).ready(function () {
     //function to load sounds, via Jquery Playsound module ..
     function loadSounds(sb_array, sb_folder) {
         for (i = 0; i < sb_array.length; i++) {
-            var ins_string = "<div onclick='$.playSound(\"sound_files/" + sb_folder + "/" + sb_array[i] + "\")' class=\"sbButton\"></div>";
-            $('#sbContainer').append(ins_string);
+			
+			var soundLabel = sb_array[i].replace('.mp3', '');
+			var container = $('#sbContainer');
+            var ins_string = "<div onclick='$.playSound(\"sound_files/" + sb_folder + "/" + sb_array[i] + "\")' class=\"sbButton\">"+ soundLabel+"</div>";
+            var stopButton = "<div id=" + '"stopButton"'+ " onclick='$.stopSound()'><h5>STOP </h5></div>";
+			$('#sbContainer').append(ins_string);
+				
+				
 
         }
     }
