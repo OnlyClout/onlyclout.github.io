@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 
 
-    // menu buttons that ass sounds (loadSounds)
+    // menu buttons that add sounds (loadSounds)
 	
     $('#bOne').click(function(){
 		$('#sbContainer').empty();
